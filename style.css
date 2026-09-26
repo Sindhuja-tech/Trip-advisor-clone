@@ -1,0 +1,262 @@
+/* RESET & FONTS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+/* 1. HEADER / NAVBAR */
+.header {
+  background: linear-gradient(135deg, #1a2a3a, #0d1b2a);
+  color: white;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #ff6b4a;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #e0e6ed;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+  background-color: #ff6b4a;
+}
+
+/* 2. HERO BANNER & SEARCH */
+.hero {
+  background: linear-gradient(rgba(13, 27, 42, 0.75), rgba(13, 27, 42, 0.75)), 
+              url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 80px 20px 100px 20px;
+}
+
+.hero h1 {
+  font-size: 38px;
+  margin-bottom: 12px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 35px;
+  color: #e0e6ed;
+}
+
+.search-box {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  display: inline-flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  max-width: 850px;
+  width: 100%;
+}
+
+.search-box input, 
+.search-box select {
+  padding: 12px 15px;
+  border: 2px solid #e1e8ed;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  color: #333;
+}
+
+.search-box input {
+  flex: 2;
+  min-width: 180px;
+}
+
+.search-box select {
+  flex: 1;
+  min-width: 130px;
+  background-color: #fff;
+}
+
+.search-btn {
+  background-color: #ff6b4a;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-btn:hover {
+  background-color: #e05334;
+}
+
+/* 3. MAIN CONTAINER & SECTIONS */
+.container {
+  max-width: 1100px;
+  margin: -40px auto 50px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 24px;
+  color: #1a2a3a;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #ff6b4a;
+  display: inline-block;
+}
+
+/* CARDS LAYOUT */
+.cards-grid {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 320px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #e8eef3;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  color: #1a2a3a;
+  margin-bottom: 8px;
+}
+
+.rating {
+  color: #f39c12;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.desc {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0088cc;
+}
+
+.card-btn {
+  background-color: #1a2a3a;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.card-btn:hover {
+  background-color: #ff6b4a;
+}
+
+/* 4. FOOTER */
+.footer {
+  background-color: #0d1b2a;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+  border-top: 4px solid #ff6b4a;
+}
+
+.footer p {
+  color: #a0aec0;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* 5. RESPONSIVE MEDIA QUERIES */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .nav-links {
+    gap: 10px;
+  }
+  .search-box {
+    flex-direction: column;
+  }
+  .search-box input, .search-box select, .search-btn {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+}

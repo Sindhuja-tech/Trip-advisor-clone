@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WanderSky - Explore The World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <div class="header">
+    <div class="logo">Wander<span>Sky</span></div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#hotels">Hotels</a></li>
+      <li><a href="#restaurants">Restaurants</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO BANNER -->
+  <div class="hero">
+    <h1>Explore Beautiful Places Worldwide</h1>
+    <p>Discover luxury stays, top-rated destinations, and delicious food.</p>
+    
+    <!-- SEARCH SECTION -->
+    <div class="search-box">
+      <input type="text" placeholder="Where do you want to go?">
+      <select>
+        <option>Price: All</option>
+        <option>Budget ($)</option>
+        <option>Mid-range ($$)</option>
+        <option>Luxury ($$$)</option>
+      </select>
+      <select>
+        <option>Rating: All</option>
+        <option>4.0+ Stars</option>
+        <option>4.5+ Stars</option>
+      </select>
+      <button class="search-btn">Search Places</button>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- FEATURED DESTINATIONS -->
+    <h2 id="destinations" class="section-title">Popular Destinations</h2>
+    <div class="cards-grid">
+      
+      <div class="card">
+        <img src="images/bali.jpg" alt="Bali">
+        <div class="card-content">
+          <h3>Bali, Indonesia</h3>
+          <p class="rating">★ 4.8 / 5.0 (1,200 Reviews)</p>
+          <p class="desc">Tropical beaches, ancient temples, and peaceful green mountain views.</p>
+          <div class="card-footer">
+            <span class="price">$450</span>
+            <button class="card-btn">Explore</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/paris.jpg" alt="Paris">
+        <div class="card-content">
+          <h3>Paris, France</h3>
+          <p class="rating">★ 4.9 / 5.0 (2,100 Reviews)</p>
+          <p class="desc">Experience the Eiffel tower, world-class museum art, and cozy cafes.</p>
+          <div class="card-footer">
+            <span class="price">$650</span>
+            <button class="card-btn">Explore</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/tokyo.jpg" alt="Tokyo">
+        <div class="card-content">
+          <h3>Tokyo, Japan</h3>
+          <p class="rating">★ 4.7 / 5.0 (980 Reviews)</p>
+          <p class="desc">A futuristic city with high-tech streets and peaceful historic shrines.</p>
+          <div class="card-footer">
+            <span class="price">$580</span>
+            <button class="card-btn">Explore</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- POPULAR HOTELS -->
+    <h2 id="hotels" class="section-title">Popular Hotels</h2>
+    <div class="cards-grid">
+      
+      <div class="card">
+        <img src="images/resort.jpg" alt="Resort">
+        <div class="card-content">
+          <h3>Grand Palm Resort</h3>
+          <p class="rating">★ 4.9 / 5.0 (Luxury Stay)</p>
+          <p class="desc">Oceanfront infinity pool, spa facilities, and free breakfast included.</p>
+          <div class="card-footer">
+            <span class="price">$150 / Night</span>
+            <button class="card-btn">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/hotel.jpg" alt="Hotel">
+        <div class="card-content">
+          <h3>Sunset Beach Villa</h3>
+          <p class="rating">★ 4.6 / 5.0 (Beachfront)</p>
+          <p class="desc">Cozy wooden rooms right next to the sea with sunset views.</p>
+          <div class="card-footer">
+            <span class="price">$95 / Night</span>
+            <button class="card-btn">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- TOP RESTAURANTS -->
+    <h2 id="restaurants" class="section-title">Top Rated Restaurants</h2>
+    <div class="cards-grid">
+
+      <div class="card">
+        <img src="images/restaurant.jpg" alt="Restaurant">
+        <div class="card-content">
+          <h3>The Italian Bistro</h3>
+          <p class="rating">★ 4.8 / 5.0 (Italian Cuisine)</p>
+          <p class="desc">Authentic handmade pasta, fresh wood-fired pizza, and fine drinks.</p>
+          <div class="card-footer">
+            <span class="price">$$ (Moderate)</span>
+            <button class="card-btn">Reserve Table</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p><strong>WanderSky Travel Agency</strong> — Your ultimate destination guide.</p>
+    <p>&copy; 2026 WanderSky. Built with HTML & CSS.</p>
+  </div>
+
+</body>
+</html>
